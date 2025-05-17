@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/icons/logo.ico" type="image/x-icon">
-  <title>Testes Força total</title>
+  <title>Força Total</title>
 </head>
 <body>
   <h1>HTML</h1>
@@ -44,7 +44,7 @@
       }
     </code>
   </pre>
-
+ 
   <hr>
 
       <ul>
@@ -79,6 +79,7 @@
             </li>
           </ul>
 
+          <hr>
       <ul>
         <li><abbr title="Dica → <a href='https...' target='_blank'></a> text </a>"><h4>Links para outros sites</h4></abbr>
         </li>
@@ -90,6 +91,8 @@
         </li>
         <p>Exemplo: <a href="index.html" rel="prev"> Volte ao menu</a></p>
       </ul>
+
+      <hr>
 
       <ul>
         <li><abbr title="Dica: <a href='caminho.pdf' target='_blank'></a>"> <h4>Abrindo documentos</h4> </abbr>
@@ -103,11 +106,29 @@
             <p><a href="Documentos/PDFs/GUERRA DO AFEGANISTÃO.pdf" target="_blank" download="Documentos/PDFs/GUERRA DO AFEGANISTÃO.pdf" type="application/pdf"> Baixar História do Afeganistão</a></p>
       </ul>    
 
+      <hr>
   <ul>
     <li><abbr title="Para usar imagens use <img>"><h3>Imagens</h3></abbr></li>
     
     <img src="img/parteSerior.png" alt="parte superior" style="width: 100px; height: 100px;">
   </ul>
+
+    <ul>
+      <li>
+        <abbr title="Dica: <picture>, <source> e <img>"><h3>Imagens com Responsividade</h3></abbr>
+      </li>
+      <p>Imagens responsivas são aquelas que se adaptam ao tamanho da tela do dispositivo em que estão sendo exibidas. Isso é importante para garantir que as imagens sejam exibidas corretamente em diferentes dispositivos, como smartphones, tablets e desktops.</p>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/logo.jpg">
+        <source media="(max-width: 1000px)" srcset="img/bebendoAguaAcademia.jpg">
+        <img src="img/parteSerior.png" alt="Imagem logo" style="width: 50%; height: 20%;">
+      </picture>
+    </ul>
+</body>
+</html>
+      <hr>
+      <P>Bônus</P>
+      <hr>
 
   <ul>
     <li><abbr title="Para usar tabelas use <table> <tr> e <th>"><h3>Tabelas</h3></abbr></li>
@@ -132,6 +153,22 @@
         <td>19</td>
       </tr>
     </table>
+  </ul>
 
-</body>
-</html>
+  <ul>
+    <li><abbr title="Para usar vídeos use <video>"><h3>Vídeos</h3></abbr>
+    </li> 
+    <video width="320" height="240" controls>
+      <source src="Documentos/Video/ForçaTotal.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </ul>
+  <ul>
+    <li><abbr title="Para usar vídeos do youtube use <iframe>"><h3>Vídeos do Youtube</h3></abbr>
+    </li>
+  <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </ul>
+
+  <hr>
+
+
