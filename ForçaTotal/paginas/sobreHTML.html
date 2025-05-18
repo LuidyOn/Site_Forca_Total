@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/icons/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/icons/logo.ico" type="image/x-icon">
   <title>Força Total</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <h1>HTML</h1>
-  <h2>Saiba o essencial sobre HTML</h2>
 
-  <hr>
-  <h3><a href="index.html" rel="prev"> Volte ao menu</a></h3>
-  <hr>
-  
+  <header>
+  <h1>HTML</h1>
+  <h2>Saiba o essencial sobre HTML</h2></header>
+  <section>
+  <h3><a href="../index.html"><button id="botao">Voltar ao menu </button></a></h3>
+
+  </section>
+
 <h3>💡Dica: passe o mouse para saber mais</h3>
 
   <ul><li><h4> <abbr title="Para deixar uma frase com ênfase, usamos: <em> ">Frase com <em>Ênfase</em></h4> </abbr>
@@ -110,7 +113,7 @@
   <ul>
     <li><abbr title="Para usar imagens use <img>"><h3>Imagens</h3></abbr></li>
     
-    <img src="img/parteSerior.png" alt="parte superior" style="width: 100px; height: 100px;">
+    <img src="../img/parteSerior.png" alt="parte superior" style="width: 100px; height: 100px;">
   </ul>
 
     <ul>
@@ -119,9 +122,9 @@
       </li>
       <p>Imagens responsivas são aquelas que se adaptam ao tamanho da tela do dispositivo em que estão sendo exibidas. Isso é importante para garantir que as imagens sejam exibidas corretamente em diferentes dispositivos, como smartphones, tablets e desktops.</p>
       <picture>
-        <source media="(max-width: 600px)" srcset="img/logo.jpg">
-        <source media="(max-width: 1000px)" srcset="img/bebendoAguaAcademia.jpg">
-        <img src="img/parteSerior.png" alt="Imagem logo" style="width: 50%; height: 20%;">
+        <source media="(max-width: 600px)" srcset="../img/logo.jpg">
+        <source media="(max-width: 1000px)" srcset="../img/bebendoAguaAcademia.jpg">
+        <img src="../img/parteSerior.png" alt="Imagem logo" style="width: 50%; height: 20%;">
       </picture>
     </ul>
 
@@ -133,7 +136,7 @@
             <br>
         </li><p>This Dangerous Desire - LuidyOn</p>
           <audio controls>
-            <source src="Songs/This Dangerous Desire.mp3" type="audio/mpeg">
+            <source src="../Songs/This Dangerous Desire.mp3" type="audio/mpeg">
           <p>Infelizmente seu navegador recusou a musica :c</p>
 
           </audio>
@@ -150,9 +153,9 @@
     <table border="1">
       <tr>
         <th>
-          <img src="img/logo.jpg" alt="" style="width: 50px">
+          <img src="../img/logo.jpg" alt="" style="width: 50px">
         </th>
-        <th><img src="img/bebendoAguaAcademia.jpg" alt="" style="width: 50px;"></th>
+        <th><img src="../img/bebendoAguaAcademia.jpg" alt="" style="width: 50px;"></th>
       </tr>
       <tr>
         <th>Nome</th>
@@ -178,12 +181,13 @@
     </video>
   </ul>
   <ul>
-    <li><abbr title="Para usar vídeos do youtube use <iframe>"><h3>Vídeos do Youtube</h3></abbr>
-    </li>
-  <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <li><abbr title="Para usar vídeos use <iframe>"><h3>Vídeos incorporados</h3></abbr>
+    </li> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iXuc7SAyk2s?si=gxvQ9xo2MFlRgFC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </ul>
 
   <hr>
-
+<h3><a href="../index.html"><button id="botao">Voltar ao menu </button></a></h3>
+  <hr>
   </body>
 </html>
