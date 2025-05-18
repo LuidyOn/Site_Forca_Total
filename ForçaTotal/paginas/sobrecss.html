@@ -5,57 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Força Total</title>
   <link rel="shortcut icon" href="../img/icons/logo.ico" type="image/x-icon">
-  <style>
+  <link rel="stylesheet" href="../css/style.css">
+<!--
+    Estilos CSS internos para a página:
+    - Define fonte, cores de fundo e texto, margens e espaçamento do body.
+    - Define cores para títulos (h1, h2, h3, h4).
+    - Ajusta margem do h5.
+    - Remove marcadores e espaçamento da lista.
+    - Define espaçamento entre itens da lista.
+    - Estiliza botões: cor de fundo, cor do texto, borda arredondada, efeito hover.
+-->
+<!--
+<style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #cef7f7;
-        color: #333;
-        margin: 0;
-        padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #cef7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
     }
     h1 {
-        color: #2c3e50;
+            color: #2c3e50;
     }
     h2 {
-        color: #2980b9;
+            color: #2980b9;
     }
     h3 {
-        color: #231a27;
+            color: #231a27;
     }
     h4 {
-        color: #2980b9;
+            color: #2980b9;
     }
     h5 {
-        margin-left: 10px;
+            margin-left: 10px;
     }
     ul {
-        list-style-type: none;
-        padding: 0;
+            list-style-type: none;
+            padding: 0;
     }
     li {
-        margin-bottom: 10px;
+            margin-bottom: 10px;
     }
     button {
-        background-color: #3498db;
-        color: white;
-        border: 100;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 100px;
+            background-color: #3498db;
+            color: white;
+            border: 100;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 100px;
     }
     button:hover {
-        background-color: #2980b9;
+            background-color: #2980b9;
     }
-  </style>
+</style>
+-->
 </head>
 <body>
+    <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0; position: fixed; top: 0; left: 0; width: 100%; background: #2261b3; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <img src="../img/logo.jpg" alt="Imagem logo" style="height: 50px; width: auto;">
+        <div style="text-align: left;">
+          <h1 style="margin: 0; font-size: 1.5em;">Força Total</h1>
+          <p style="margin: 0; color: rgb(207, 207, 207); font-size: 0.95em;">Conheça o básico de CSS</p>
+        </div>
+      </div>
+      <span style="flex: 1; display: flex; justify-content: center; gap: 8px;"></span>
+        <a href="../index.html"><button id="botao">Voltar ao menu</button></a>
+        <a href="sobreHTML.html"><button>Sobre HTML</button></a>
+        <a href="sobrenos.html"><button>Sobre nós</button></a>
+      </span>
+    </header>
+    <div style="height: 100px;"></div>
+    <h3 style="text-align: left;">
 
-<h1>CSS</h1>
-<h2>Saiba o essencial sobre CSS</h2>
-    <hr>
-    <h3><a href="../index.html"><button id="botao">Voltar ao menu </button></a></h3>
-    <hr>
+<section>
+<h2 style="text-align: center;">Saiba o essencial sobre CSS</h2>
     <h3>💡Há 3 maneiras de estilizar suas páginas com CSS, vamos ver cada uma delas!</h3>
+    </section>
+    
+    <section>
 
     <ul>
         <li style="color: rgb(31, 51, 223);"><h4></style> <abbr title="Dica: use <h4 style='color'> ">Estilizando com CSS inline</h4></abbr>
@@ -73,6 +101,7 @@
         <li><h4> <abbr title="Para esteilizar uma página inteira usamos: <link rel='stylesheet' href='style.css'>">Estilizando com CSS externo</h4> </abbr>
         </li>
     </ul>
-        
+    <br>
+        </section>
 </body>
 </html>

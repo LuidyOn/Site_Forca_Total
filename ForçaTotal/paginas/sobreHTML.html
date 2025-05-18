@@ -9,15 +9,37 @@
 </head>
 <body>
 
-  <header>
-  <h1>HTML</h1>
-  <h2>Saiba o essencial sobre HTML</h2></header>
+    <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0; position: fixed; top: 0; left: 0; width: 100%; background: #2261b3; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <img src="../img/logo.jpg" alt="Imagem logo" style="height: 50px; width: auto;">
+        <div style="text-align: left;">
+          <h1 style="margin: 0; font-size: 1.5em;">Força Total</h1>
+          <p style="margin: 0; color: rgb(207, 207, 207); font-size: 0.95em;">Conheça o básico de HTML</p>
+        </div>
+      </div>
+      <span style="flex: 1; display: flex; justify-content: center; gap: 8px;"></span>
+        <a href="../index.html"><button id="botao">Voltar ao menu</button></a>
+        <a href="sobrenos.html"><button>Sobre nós</button></a>
+        <a href="sobrecss.html"><button>Sobre CSS</button></a>
+      </span>
+    </header>
+
+  <h3 style="text-align: left;">
+    <span >
+    <a href="../index.html"><button id="botao">Voltar ao menu</button></a>
+    </span>
+    <span style="float: right;">
+      <a href="sobrenos.html"><button>Sobre nós</button></a>
+      <a href="sobrecss.html"><button>Sobre CSS</button></a>
+    </span>
+  </h3>
+  <br>
+
   <section>
-  <h3><a href="../index.html"><button id="botao">Voltar ao menu </button></a></h3>
+<h3>Formatação</h3>
 
-  </section>
-
-<h3>💡Dica: passe o mouse para saber mais</h3>
+<h4 style=" text-align: left;">💡Dica: passe o mouse para saber mais</h4>
+<br>
 
   <ul><li><h4> <abbr title="Para deixar uma frase com ênfase, usamos: <em> ">Frase com <em>Ênfase</em></h4> </abbr>
   </li></ul>
@@ -28,8 +50,8 @@
     
   <ul><li><abbr title=" Para utilizarmos frases deletadas usamos: <del>"><h4>Frases <del>deletadas</del></h4></abbr></li></ul>
 
-  <hr>
-
+</section>
+<section>
   <h3>Código para Nina</h3>
   <p>Usando &lt;pre&gt; para manter os espaçamentos e tabs <br> &lt;code&gt; para espaçamentos entre as letras</p>
 
@@ -47,9 +69,11 @@
       }
     </code>
   </pre>
- 
-  <hr>
+ </section>
 
+<section>
+  <h3>Listas</h3>
+  <span style="display: block; margin-left: 30px;">
       <ul>
         <li>
           <abbr title="Para usar lista pontuadas use <ul>"> <h4>Lista Pontuais</h4> </abbr>
@@ -58,8 +82,11 @@
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
+
           </ul>
       </ul>
+
+      <br>
 
       <ol>
         <li>
@@ -72,6 +99,8 @@
           </ol>
       </ol>
       
+      <br>
+      
           <ul>
             <li>
               <abbr title="Para usar uma lista de definição, use <dl> para agrupar os elementos(bloco), <dt> para o termo e <dd> para a descrição."> <h4>Lista definição</h4> </abbr>
@@ -81,8 +110,14 @@
               </dl>
             </li>
           </ul>
+          
+          <br>
+          </span>
 
-          <hr>
+          </section>
+          <section>
+
+            <h3>Links</h3>
       <ul>
         <li><abbr title="Dica → <a href='https...' target='_blank'></a> text </a>"><h4>Links para outros sites</h4></abbr>
         </li>
@@ -92,11 +127,12 @@
       <ul>
         <li><abbr title="Dica → <a href='caminho.html' rel='prev/next'></a>"><h4>Links internos</h4></abbr>
         </li>
-        <p>Exemplo: <a href="index.html" rel="prev"> Volte ao menu</a></p>
+        <p>Exemplo: <a href="../index.html" rel="prev"> Volte ao menu</a></p>
       </ul>
+      </section>
 
-      <hr>
-
+      <section>
+        <h3>Documentos</h3>
       <ul>
         <li><abbr title="Dica: <a href='caminho.pdf' target='_blank'></a>"> <h4>Abrindo documentos</h4> </abbr>
         </li>
@@ -109,16 +145,21 @@
             <p><a href="Documentos/PDFs/GUERRA DO AFEGANISTÃO.pdf" target="_blank" download="Documentos/PDFs/GUERRA DO AFEGANISTÃO.pdf" type="application/pdf"> Baixar História do Afeganistão</a></p>
       </ul>    
 
-      <hr>
+         </section>
+         <section>
+          <h3>Imagens</h3>
   <ul>
-    <li><abbr title="Para usar imagens use <img>"><h3>Imagens</h3></abbr></li>
+    <li><abbr title="Para usar imagens use <img>"><h4>Imagens</h4></abbr></li>
     
     <img src="../img/parteSerior.png" alt="parte superior" style="width: 100px; height: 100px;">
   </ul>
+  
+         <br>
 
     <ul>
       <li>
-        <abbr title="Dica: <picture>, <source> e <img>"><h3>Imagens com Responsividade</h3></abbr>
+        <abbr title="Dica: <picture>, <source> e <img>"><h4>Imagens com Responsividade</h4></abbr>
+ 
       </li>
       <p>Imagens responsivas são aquelas que se adaptam ao tamanho da tela do dispositivo em que estão sendo exibidas. Isso é importante para garantir que as imagens sejam exibidas corretamente em diferentes dispositivos, como smartphones, tablets e desktops.</p>
       <picture>
@@ -128,11 +169,13 @@
       </picture>
     </ul>
 
-      <hr>
+    </section>
+<section>
+  <h3>Áudios</h3>
 
       <ul><li>
         
-          <abbr title="Dica: use <audio controls> e <source...>"><h3>Escutando audios</h3></abbr>
+          <abbr title="Dica: use <audio controls> e <source...>"><h4>Escutando áudios</h4></abbr>
             <br>
         </li><p>This Dangerous Desire - LuidyOn</p>
           <audio controls>
@@ -141,14 +184,33 @@
 
           </audio>
         
-      </li></ul>
-      <hr>
+          </section>
 
-      <P>Bônus</P>
-      <hr>
+      </li></ul>
+
+      <section>
+        <h3>Vídeo</h3>
 
   <ul>
-    <li><abbr title="Para usar tabelas use <table> <tr> e <th>"><h3>Tabelas</h3></abbr></li>
+    <li><abbr title="Para usar vídeos use <video>"><h4>Vídeos</h4></abbr>
+    </li> 
+    <video width="320" height="240" controls>
+      <source src="Documentos/Video/ForçaTotal.mp4" type="video/mp4">
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+  </ul>
+  <ul>
+    <li><abbr title="Para usar vídeos use <iframe>"><h4>Vídeos incorporados</h4></abbr>
+    </li> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iXuc7SAyk2s?si=gxvQ9xo2MFlRgFC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </ul>
+
+  </section>
+
+  <P>Bônus</P><section>
+  <ul>
+    <h3>Tabelas</h3>
+    <li><abbr title="Para usar tabelas use <table> <tr> e <th>"><h4>Tabela</h4></abbr></li>
     
     <table border="1">
       <tr>
@@ -172,22 +234,11 @@
     </table>
   </ul>
 
-  <ul>
-    <li><abbr title="Para usar vídeos use <video>"><h3>Vídeos</h3></abbr>
-    </li> 
-    <video width="320" height="240" controls>
-      <source src="Documentos/Video/ForçaTotal.mp4" type="video/mp4">
-      Seu navegador não suporta o elemento de vídeo.
-    </video>
-  </ul>
-  <ul>
-    <li><abbr title="Para usar vídeos use <iframe>"><h3>Vídeos incorporados</h3></abbr>
-    </li> 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iXuc7SAyk2s?si=gxvQ9xo2MFlRgFC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </ul>
+</section>
 
-  <hr>
-<h3><a href="../index.html"><button id="botao">Voltar ao menu </button></a></h3>
-  <hr>
+     <footer>
+        <p>© 2025 - Força total - Luiz Oliveira</p>
+    </footer>
+
   </body>
 </html>
