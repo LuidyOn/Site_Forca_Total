@@ -23,19 +23,20 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
-  padding: 8px 0;
   position: fixed;
-  top: 0;
+  top: -20px;
   left: 0;
   width: 100%;
   background: #10315e;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  background-color: #1c41a5;
+  background-color: #0a2a83;
   color: white;
   text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
 }
 
 header img {
@@ -79,7 +80,7 @@ h5 {
 
 ul {
   padding: 0;
-  margin: 0;
+  margin-left: 100px;
 }
 ol {
   list-style-type: decimal;
