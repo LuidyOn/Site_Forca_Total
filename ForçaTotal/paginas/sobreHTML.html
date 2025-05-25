@@ -156,14 +156,16 @@ else {
             <h2>Vídeo</h2>
             <ul>
                 <li><abbr title="Para usar vídeos use <video>"><h4>Vídeos</h4></abbr>
-                    <video controls class="section-video">
+                    <div class="cetralizar-div">
+                    <video controls class="video-wrapper">
                         <source src="../Documentos/Video/ForcaTotal.mp4" type="video/mp4">
                         Seu navegador não suporta o elemento de vídeo.
                     </video>
+                    </div>
                 </li>
                 <li><abbr title="Para usar vídeos use <iframe>"><h4>Vídeos incorporados</h4></abbr>
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube-nocookie.com/embed/iXuc7SAyk2s?si=gxvQ9xo2MFlRgFC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="cetralizar-div">
+                        <iframe src="https://www.youtube-nocookie.com/embed/iXuc7SAyk2s?si=gxvQ9xo2MFlRgFC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video-wrapper"></iframe>
                     </div>
                 </li>
             </ul>
@@ -173,10 +175,6 @@ else {
     <footer>
         <div class="footer-container">
             <a href="sobreHTML.html"><button class="btn">Voltar ao topo</button></a>
-            <div class="footer-nav">
-                <a href="../index.html"><button class="btn">Voltar ao menu</button></a>
-                <a href="outros.html"><button class="btn">Outros</button></a>
-            </div>
         </div>
     </footer>
 </body>
