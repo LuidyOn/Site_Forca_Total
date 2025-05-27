@@ -11,10 +11,15 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="../img/logo.jpg" alt="Imagem logo" class="logo">
+            
             <div class="header-text">
-                <h1>Força Total</h1>
-                <p>Parece uma Moça? Totalize sua Força!</p>
+                <a href="../index.html">
+                    <img src="../img/logo.jpg" alt="Imagem logo" class="logo">
+                    <div>
+                        <h1>Força Total</h1>
+                        <p>Parece uma Moça? Totalize sua Força!</p>
+                    </div>
+                </a>
             </div>
             <div class="header-nav">
                 <a href="../index.html"><button class="btn">Voltar ao menu</button></a>
@@ -27,13 +32,13 @@
     <section class="variacao css-intro-section">
         <div class="section-content">
             <h2>Saiba o essencial sobre CSS</h2>
-            <h3>💡Há 3 maneiras de estilizar suas páginas com CSS, vamos ver cada uma delas!</h3>
         </div>
     </section>
 
     <section class="css-methods-section">
         <div class="section-content">
             <h2>Métodos de Estilização</h2>
+            <h3>💡Há 3 maneiras de estilizar suas páginas com CSS, vamos ver cada uma delas!</h3>
             <ul>
                 <li><abbr title="Dica: use <h4 style='color'>"><h4>Estilizando com CSS inline</h4></abbr>
                     <p>Modifica apenas a linha/bloco selecionado.</p>
@@ -44,8 +49,31 @@
                 </li>
                 <li><abbr title="Para estilizar uma página inteira usamos: <link rel='stylesheet' href='style.css'>"><h4>Estilizando com CSS externo</h4></abbr>
                     <p>Modifica a página inteira ou várias páginas, usando um arquivo externo.</p>
+                    <p class="note">OBS: Extremamente recomendado.</p>
                 </li>
             </ul>
+        </div>
+    </section>
+
+        <section class="variacao css-estrutura-section">
+        <div class="section-content">
+            <h2>Estrutura básica da folha de estilo</h2>
+            <pre><code>
+    seletor { 
+    propriedade, valor;
+    propriedade, valor;
+    }
+
+    <strong>Exemplo:</strong>
+    section {                    seletor: section
+    padding: 2rem 1rem;          propriedade: padding, valor: 2rem 1rem
+    margin: 1rem auto;           propriedade: margin, valor: 1rem auto
+    max-width: 1200px;           propriedade: max-width, valor: 1200px
+    border-radius: 10px;         propriedade: border-radius, valor: 10px
+    display: flex;               propriedade: display, valor: flex
+    text-align: center;          propriedade: text-align, valor: center
+    }                            Fim do bloco: }
+            </code></pre>
         </div>
     </section>
 
