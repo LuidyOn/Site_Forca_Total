@@ -65,7 +65,7 @@ header {
 }
 
 .header-spacer {
-    height: 74px;
+    height: 3.0rem;
 }
 
 section {
@@ -87,6 +87,13 @@ section {
 
 .variacao {
     background-color: rgba(99, 173, 219, 0.262);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 80%;
+    flex-direction: row-reverse;
+    
 }
 
 .exercise-section, .progress-section, .health-section, 
@@ -110,10 +117,23 @@ section {
 }
 
 .section-image {
+    display: flex;
     max-width: 30%;
     height: 30%;
     border-radius: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-banner {
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 .section-video, .video-wrapper {
@@ -176,6 +196,7 @@ section {
     transition: transform 0.2s, box-shadow 0.2s;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .clicavel-section, .clicavel-quadrado-section:hover {
@@ -183,9 +204,9 @@ section {
     box-shadow: 0 4px 16px rgba(28, 65, 165, 0.15);
 }
 
-.clicavel-section, .clicavel-quadrado-section h1 {
+.clicavel-section,h1 {
     font-size: 1em;
-    margin: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -193,6 +214,7 @@ section {
 .clicavel-quadrado-section {
 border-radius: 10px;
 }
+
 
 h1 {
     font-size: 2.5rem;
@@ -275,6 +297,15 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
+}
+
+.footer-container > *:first-child {
+    margin-right: auto;
+}
+
+.footer-container > *:last-child {
+    margin-left: auto;
 }
 
 .footer-nav {
@@ -305,7 +336,7 @@ footer {
     }
 
     .header-spacer {
-        height: 3rem;
+        height: 2rem;
     }
 
     .exercise-section, .progress-section, .health-section,
@@ -353,7 +384,7 @@ footer {
     }
 
     .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
     background-color: #000;
     color: white;
@@ -361,7 +392,7 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    margin: 0.5rem;
+    margin: 0.1rem;
 }
 }
 
@@ -388,7 +419,7 @@ footer {
     }
 
     .header-spacer {
-        height: 4.0rem;
+        height: 5.0rem;
     }
 
     section {
@@ -461,5 +492,6 @@ footer {
         justify-content: flex-end !important;
         align-items: flex-end !important;
     }
+    
 }
    
