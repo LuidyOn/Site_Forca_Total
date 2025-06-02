@@ -522,11 +522,11 @@ footer {
     }
 
     .header-spacer {
-        height: 6.0rem;
+        height: 4.0rem;
     }
 
     .header-spacer-banner {
-    height: 6.0rem;
+    height: 3.0rem;
 }
 
     section {
@@ -554,8 +554,8 @@ footer {
     }
 
     .btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.0rem;
         width: 100%;
         text-align: center;
     }
