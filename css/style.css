@@ -57,7 +57,7 @@ header {
     gap: 1rem;
     max-width: 1200px;
     margin: auto;
-    height: 4rem;
+    height: 3rem;
 }
 
 .logo {
@@ -89,7 +89,7 @@ header {
 }
 
 .header-spacer {
-    height: 8.0rem;
+    height: 7.0rem;
 }
 
 .header-spacer-banner {
@@ -106,7 +106,7 @@ section {
 }
 
 section:hover p.enfase {
-    color: #925209;
+    color: #a70c0c;
     text-decoration: double;
     transition: color 0.1s;
     text-decoration: underline;
@@ -159,9 +159,10 @@ section:hover h2 {
 }
 
 .section-image {
+    min-width: 40%;
     display: flex;
-    max-width: 30%;
-    height: 30%;
+    max-width: 40%;
+    height: 40%;
     border-radius: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: auto;
@@ -387,6 +388,10 @@ code {
     transform: translateY(0);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 footer {
     background-color: #1c41a5;
     padding: 1rem;
@@ -483,7 +488,7 @@ footer {
 
     .btn {
     padding: 0.5rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     background-color: #000;
     color: white;
     border: none;
@@ -509,16 +514,20 @@ footer {
     }
 
     .header-text h1 {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 
     .header-text p {
-        font-size: 0.50rem;
+        font-size: 0.40rem;
     }
 
     .header-spacer {
-        height: 5.0rem;
+        height: 6.0rem;
     }
+
+    .header-spacer-banner {
+    height: 6.0rem;
+}
 
     section {
         padding: 1rem 0.5rem;
@@ -568,8 +577,9 @@ footer {
     }
 
     .section-image {
-        max-width: 50%;
-        height: 50%;
+        min-width: 75%;
+        max-width: 100%;
+
         border-radius: 100px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
