@@ -124,13 +124,6 @@ section.section-nav {
     margin: auto;
 }
 
-section.section-nav .clicavel, div.section-nav .variacao {
-    flex-direction: column;
-    transition: background-color 0.3s, transform 0.2s;
-    margin: 0%;
-    
-}
-
 section.section-nav .section-image {
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -159,6 +152,7 @@ section.section-nav .section-image {
     gap: 1.5rem;
     width: 80%;
 }
+
 .contact-section li{
     flex-direction: row;
     align-items: center;
