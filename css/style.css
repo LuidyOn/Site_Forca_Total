@@ -209,6 +209,13 @@ section.section-nav .section-image {
     align-items: center;
 }
 
+video {
+    display: flex;
+    margin: auto;
+    padding: 0.5rem;
+    max-width: 50%;
+}
+
 .video-wrapper iframe {
     width: 100%;
     height: 100%;
